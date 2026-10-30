@@ -16,6 +16,7 @@
     "test": "node scripts/validate-skills.mjs --check && node scripts/check-links.mjs",
     "validate": "node scripts/validate-skills.mjs --check",
     "links": "node scripts/check-links.mjs",
-    "catalog": "node scripts/validate-skills.mjs --write"
+    "catalog": "node scripts/validate-skills.mjs --write",
+    "repo:set": "node scripts/set-repo.mjs"
   }
 }
