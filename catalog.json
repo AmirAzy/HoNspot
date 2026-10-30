@@ -1,0 +1,97 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OWNER/hone/main/catalog.schema.json",
+  "version": 1,
+  "skills": [
+    {
+      "name": "api-contract",
+      "description": "Design, change or consume an HTTP API without breaking the clients you cannot see. Use when adding endpoints, changing a response shape, introducing versioning, pagination, idempotency or error codes, when a mobile client will lag behind the server, or when a \"small\" response change has to stay compatible with old builds.",
+      "license": "MIT",
+      "path": "skills/api-contract/SKILL.md",
+      "headings": 6,
+      "references": [
+        "contract-checklist.md"
+      ]
+    },
+    {
+      "name": "bilingual-docs",
+      "description": "Keep documentation in two languages from drifting apart. Use when a project writes docs in English and another language, when a translated page is out of date or missing, when links and anchors break across locales, when Persian or Arabic (RTL) text mixes with code and numbers, or when a translation reads like machine output rather than an author.",
+      "license": "MIT",
+      "path": "skills/bilingual-docs/SKILL.md",
+      "headings": 6,
+      "references": [
+        "glossary-template.md"
+      ]
+    },
+    {
+      "name": "debug-connectivity",
+      "description": "Diagnose why two processes, two machines, a container and its host, or a client and a server cannot exchange traffic. Use when a connection times out or is refused, when a service works locally but not from another host, when a request works on one network and fails on another, or when someone asks to \"fix the networking\" without a single measurement yet.",
+      "license": "MIT",
+      "path": "skills/debug-connectivity/SKILL.md",
+      "headings": 6,
+      "references": [
+        "failure-signatures.md",
+        "layered-checks.md"
+      ]
+    },
+    {
+      "name": "diagnose-slow",
+      "description": "Find out what is actually slow before changing any code. Use when a page, endpoint, query, build, test suite or device feels slow, when someone proposes a cache, an index, an async rewrite or a faster library without a measurement, or when a performance problem keeps coming back after a previous \"fix\".",
+      "license": "MIT",
+      "path": "skills/diagnose-slow/SKILL.md",
+      "headings": 6,
+      "references": [
+        "measurement.md"
+      ]
+    },
+    {
+      "name": "plan-migration",
+      "description": "Plan a framework, runtime, dependency or schema upgrade that touches many files, without a big-bang rewrite. Use when asked to upgrade to a new major version, replace a library, split a monolith, move a package between repos, or when a previous migration stalled half-finished and left two ways of doing the same thing.",
+      "license": "MIT",
+      "path": "skills/plan-migration/SKILL.md",
+      "headings": 6,
+      "references": [
+        "migration-template.md"
+      ]
+    },
+    {
+      "name": "release-verify",
+      "description": "Verify a release artefact before it is announced, and write release notes that do not overclaim. Use when publishing a binary, container image, package, static site or mobile build, when a build \"succeeded\" but nobody opened it, when checksums or versions are missing, or when a release note needs to state what was and was not tested.",
+      "license": "MIT",
+      "path": "skills/release-verify/SKILL.md",
+      "headings": 6,
+      "references": [
+        "artifact-checks.md"
+      ]
+    },
+    {
+      "name": "review-diff",
+      "description": "Review a pull request, a patch or an agent's own work with findings ranked by risk instead of listed by line. Use when asked to review a diff, when a change touches data, auth, money, migrations or concurrency, when reviewing generated code that looks plausible, or when a review is turning into a style debate the linter should have settled.",
+      "license": "MIT",
+      "path": "skills/review-diff/SKILL.md",
+      "headings": 6,
+      "references": [
+        "severity.md"
+      ]
+    },
+    {
+      "name": "write-a-skill",
+      "description": "Write a new skill for this pack or for any agent: choosing the trigger, structuring the instructions, deciding what belongs in references, and testing whether the skill actually changes behaviour. Use when adding a skill, when an existing skill is not being loaded or is being ignored, or when turning a repeated correction into something an agent will apply by itself.",
+      "license": "MIT",
+      "path": "skills/write-a-skill/SKILL.md",
+      "headings": 6,
+      "references": [
+        "rubric.md"
+      ]
+    },
+    {
+      "name": "write-postmortem",
+      "description": "Write a blameless postmortem after an outage, a bad deploy, a data loss or a near miss. Use when an incident needs a written record, when the only finding so far is \"human error\", when action items keep recurring without owners, or when a team needs a timeline that survives being read six months later.",
+      "license": "MIT",
+      "path": "skills/write-postmortem/SKILL.md",
+      "headings": 6,
+      "references": [
+        "template.md"
+      ]
+    }
+  ]
+}
