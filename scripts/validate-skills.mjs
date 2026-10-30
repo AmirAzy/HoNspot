@@ -196,15 +196,9 @@ if (errors.length === 0 && warnings.length === 0) {
   console.log(`✓ ${catalog.length} skills valid, ${warnings.length} warning(s)`);
 }
 
-const serialised = `${JSON.stringify(
-  {
-    $schema: 'https://raw.githubusercontent.com/OWNER/hone/main/catalog.schema.json',
-    version: 1,
-    skills: catalog,
-  },
-  null,
-  2,
-)}\n`;
+// No absolute URL in here on purpose: the catalog must be identical before and after the repository
+// is pointed at a different GitHub account. The schema lives in catalog.schema.json.
+const serialised = `${JSON.stringify({ version: 1, skills: catalog }, null, 2)}\n`;
 
 if (MODE === 'write') {
   writeFileSync(catalogPath, serialised);
