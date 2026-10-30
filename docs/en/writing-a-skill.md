@@ -59,7 +59,7 @@ Move anything that is looked up rather than memorised: command tables per platfo
 glossaries, worked examples. Link them from the point of the procedure where they are needed, by name:
 
 ```markdown
-The command set per operating system is in [references/layered-checks.md](references/layered-checks.md).
+The command set per operating system is in `references/layered-checks.md`.
 ```
 
 The validator fails on a reference that is linked but missing, **and** on a file that exists but is
