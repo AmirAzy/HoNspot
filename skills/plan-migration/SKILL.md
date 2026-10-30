@@ -70,7 +70,7 @@ Not for: a mechanical rename in three files, or a single dependency patch.
    migration from stalling.
 
 8. **Remove the scaffolding deliberately.** When the last old path is gone: delete the compatibility
-   layer, the flag, the deprecated module and the TODO, in one final, celebrated commit.
+   layer, the flag, the deprecated module and every leftover note, in one final commit.
 
 ## Anti-patterns
 
