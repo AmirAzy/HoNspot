@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Writing a skill
+    url: https://github.com/OWNER/hone/blob/main/docs/en/writing-a-skill.md
+    about: The anatomy, the validator's rules, and the ten review questions.

@@ -1,0 +1,39 @@
+name: Propose a skill
+description: A situation where an agent makes a specific, repeatable mistake
+labels: [proposal]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A skill is justified by a failure, not by a topic. If you cannot name what an agent does
+        wrong — and show it happening more than once — this is probably a blog post.
+  - type: textarea
+    id: failure
+    attributes:
+      label: What does the agent do wrong, specifically?
+      placeholder: It adds a retry policy when the listener is bound to loopback.
+    validations:
+      required: true
+  - type: textarea
+    id: instances
+    attributes:
+      label: Two or three real instances
+      placeholder: Links to the transcript, issue, or review comment where this happened.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: What decision should change, and how would we notice?
+      placeholder: The first action should be a diagnostic command, not an edit.
+  - type: checkboxes
+    id: fits
+    attributes:
+      label: Fits this pack
+      options:
+        - label: This is about a decision, not a tutorial topic
+          required: true
+        - label: It does not duplicate an existing skill (see skills/README.md)
+          required: true
+        - label: It can be checked without running anything
+          required: true

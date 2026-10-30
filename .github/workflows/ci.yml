@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate skills and documentation
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [20, 22]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Skill structure, frontmatter and catalog
+        run: node scripts/validate-skills.mjs --check
+
+      - name: Relative links in every markdown file
+        run: node scripts/check-links.mjs
+
+      - name: Bilingual parity (EN/FA mirrors)
+        run: |
+          missing=0
+          for f in docs/en/*.md; do
+            other="docs/fa/$(basename "$f")"
+            [ -f "$other" ] || { echo "missing: $other"; missing=1; }
+          done
+          for f in docs/fa/*.md; do
+            other="docs/en/$(basename "$f")"
+            [ -f "$other" ] || { echo "missing: $other"; missing=1; }
+          done
+          exit $missing
+
+      - name: Summary
+        if: always()
+        run: echo "Skills validated with Node ${{ matrix.node }}"

@@ -1,0 +1,44 @@
+name: Something is wrong with a skill
+description: A skill did not load, was ignored, or gave harmful advice
+labels: [bug]
+body:
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Which skill
+      options:
+        - debug-connectivity
+        - diagnose-slow
+        - release-verify
+        - plan-migration
+        - review-diff
+        - write-postmortem
+        - api-contract
+        - bilingual-docs
+        - write-a-skill
+        - repository tooling (validator, link checker, catalog)
+    validations:
+      required: true
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: Symptom
+      options:
+        - Never loaded (the trigger did not fire)
+        - Loaded but ignored
+        - Followed into a wrong result
+        - Gave advice that is unsafe or incorrect
+        - Tooling (npm test) reports something wrong
+    validations:
+      required: true
+  - type: textarea
+    id: transcript
+    attributes:
+      label: What happened
+      description: The prompt, the first actions the agent took, and what you expected instead.
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Agent / model / tooling (if relevant)
