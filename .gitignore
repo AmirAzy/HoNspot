@@ -1,0 +1,14 @@
+# This repository has no dependencies and no build output. These are here so that a stray
+# local run of `npm install` or an editor never ends up in a commit.
+node_modules/
+package-lock.json
+*.log
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.zip
+
+# Skills installed locally while testing how this pack behaves
+/.agents
+/.claude

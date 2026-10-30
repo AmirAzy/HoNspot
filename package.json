@@ -1,0 +1,21 @@
+{
+  "name": "hone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small, opinionated pack of skills for AI coding agents.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/hone.git"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "test": "node scripts/validate-skills.mjs --check && node scripts/check-links.mjs",
+    "validate": "node scripts/validate-skills.mjs --check",
+    "links": "node scripts/check-links.mjs",
+    "catalog": "node scripts/validate-skills.mjs --write"
+  }
+}
