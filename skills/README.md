@@ -18,8 +18,8 @@ needs the lookup tables. Nothing here executes.
 ## Installing
 
 ```bash
-npx skills@latest add OWNER/hone --skill '*'
-npx skills@latest add OWNER/hone --skill debug-connectivity,review-diff
+npx skills@latest add AmirAzy/HoNspot --skill '*'
+npx skills@latest add AmirAzy/HoNspot --skill debug-connectivity,review-diff
 ```
 
 Or copy a directory into `~/.claude/skills/`, `.agents/skills/`, or wherever your agent looks. Keep

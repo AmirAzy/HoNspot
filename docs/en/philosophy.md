@@ -5,6 +5,8 @@ looks finished. It is not a knowledge problem — modern models know what a fire
 idempotency key is, and how a postmortem should be structured. The gap is between knowing and
 *doing it here, now, with the evidence in front of you*.
 
+![Check the evidence before claiming](../../assets/verify.jpg)
+
 ## The four failures this pack targets
 
 **1. Claiming without observing.**

@@ -9,7 +9,22 @@ definition of done — those change when the skill loads and what it demands.
 
 ## [Unreleased]
 
-Nothing yet.
+### Fixed
+
+- Ran the repo's own finalize step: `node scripts/set-repo.mjs AmirAzy HoNspot` — every
+  `OWNER/hone` placeholder now points at the real repository, so the install commands work.
+- Removed the full Persian README that was duplicated inside `README.md` (264 lines → 107);
+  the Persian version lives only in `README.fa.md`.
+- Unified the project name to **HoNspot** everywhere (titles, `package.json`, `LICENSE`,
+  `catalog.schema.json`, `CONTRIBUTING.md`).
+- Rewrote `PUBLISH.md`: the pre-publish guide is now a status note — the repo is published,
+  the finalize step is done, and only the settings checklist (topics, branch protection,
+  `v1.0.0` tag) remains.
+
+### Added
+
+- `assets/hero.jpg` — banner for both READMEs; `assets/logo.png` — the checkmark mark used in
+  the README titles; `assets/verify.jpg` — illustration for the philosophy docs.
 
 ## [1.0.0] — 2026-10-30
 

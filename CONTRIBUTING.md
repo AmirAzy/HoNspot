@@ -15,8 +15,8 @@ This repository is text plus two small scripts. The bar for a new skill is not "
 ## Getting set up
 
 ```bash
-git clone https://github.com/OWNER/hone.git
-cd hone
+git clone https://github.com/AmirAzy/HoNspot.git
+cd HoNspot
 npm test        # no install needed: there are no dependencies
 ```
 

@@ -57,7 +57,7 @@ if (arg === '--check') {
 }
 
 const owner = arg.replace(/^@/, '');
-const repo = (process.argv[3] ?? 'hone').replace(/\.git$/, '');
+const repo = (process.argv[3] ?? 'HoNspot').replace(/\.git$/, '');
 const replacement = `${owner}/${repo}`;
 
 if (!/^[A-Za-z0-9-]+$/.test(owner) || !/^[A-Za-z0-9._-]+$/.test(repo)) {
